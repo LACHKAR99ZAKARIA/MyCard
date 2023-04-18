@@ -14,6 +14,11 @@
 		13C0965C29CB1FAB0077198D /* LachkarZakariaCardsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13C0965B29CB1FAB0077198D /* LachkarZakariaCardsTests.swift */; };
 		13C0966629CB1FAB0077198D /* LachkarZakariaCardsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13C0966529CB1FAB0077198D /* LachkarZakariaCardsUITests.swift */; };
 		13C0966829CB1FAB0077198D /* LachkarZakariaCardsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13C0966729CB1FAB0077198D /* LachkarZakariaCardsUITestsLaunchTests.swift */; };
+		13C0967529CB21E10077198D /* construc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13C0967429CB21E10077198D /* construc.swift */; };
+		13C0967B29CB29490077198D /* Pacifico-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 13C0967A29CB29490077198D /* Pacifico-Regular.ttf */; };
+		13C0967C29CB29490077198D /* Pacifico-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 13C0967A29CB29490077198D /* Pacifico-Regular.ttf */; };
+		13C0967D29CB29490077198D /* Pacifico-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 13C0967A29CB29490077198D /* Pacifico-Regular.ttf */; };
+		13C0968129CB43F80077198D /* InfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13C0968029CB43F80077198D /* InfoView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +49,10 @@
 		13C0966129CB1FAB0077198D /* LachkarZakariaCardsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LachkarZakariaCardsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		13C0966529CB1FAB0077198D /* LachkarZakariaCardsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LachkarZakariaCardsUITests.swift; sourceTree = "<group>"; };
 		13C0966729CB1FAB0077198D /* LachkarZakariaCardsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LachkarZakariaCardsUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		13C0967429CB21E10077198D /* construc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = construc.swift; sourceTree = "<group>"; };
+		13C0967829CB24940077198D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		13C0967A29CB29490077198D /* Pacifico-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pacifico-Regular.ttf"; sourceTree = "<group>"; };
+		13C0968029CB43F80077198D /* InfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,10 +103,14 @@
 		13C0964929CB1FA90077198D /* LachkarZakariaCards */ = {
 			isa = PBXGroup;
 			children = (
+				13C0967929CB292B0077198D /* fonts */,
+				13C0967829CB24940077198D /* Info.plist */,
 				13C0964A29CB1FA90077198D /* LachkarZakariaCardsApp.swift */,
 				13C0964C29CB1FA90077198D /* ContentView.swift */,
+				13C0968029CB43F80077198D /* InfoView.swift */,
 				13C0964E29CB1FAB0077198D /* Assets.xcassets */,
 				13C0965029CB1FAB0077198D /* Preview Content */,
+				13C0967429CB21E10077198D /* construc.swift */,
 			);
 			path = LachkarZakariaCards;
 			sourceTree = "<group>";
@@ -125,6 +138,14 @@
 				13C0966729CB1FAB0077198D /* LachkarZakariaCardsUITestsLaunchTests.swift */,
 			);
 			path = LachkarZakariaCardsUITests;
+			sourceTree = "<group>";
+		};
+		13C0967929CB292B0077198D /* fonts */ = {
+			isa = PBXGroup;
+			children = (
+				13C0967A29CB29490077198D /* Pacifico-Regular.ttf */,
+			);
+			path = fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -231,6 +252,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				13C0967B29CB29490077198D /* Pacifico-Regular.ttf in Resources */,
 				13C0965229CB1FAB0077198D /* Preview Assets.xcassets in Resources */,
 				13C0964F29CB1FAB0077198D /* Assets.xcassets in Resources */,
 			);
@@ -240,6 +262,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				13C0967C29CB29490077198D /* Pacifico-Regular.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -247,6 +270,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				13C0967D29CB29490077198D /* Pacifico-Regular.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -257,8 +281,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				13C0968129CB43F80077198D /* InfoView.swift in Sources */,
 				13C0964D29CB1FA90077198D /* ContentView.swift in Sources */,
 				13C0964B29CB1FA90077198D /* LachkarZakariaCardsApp.swift in Sources */,
+				13C0967529CB21E10077198D /* construc.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -348,6 +374,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
+				NEW_SETTING = "";
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
@@ -402,6 +429,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
+				NEW_SETTING = "";
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
@@ -420,6 +448,7 @@
 				DEVELOPMENT_TEAM = J6CR3N3ZH6;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = LachkarZakariaCards/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -449,6 +478,7 @@
 				DEVELOPMENT_TEAM = J6CR3N3ZH6;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = LachkarZakariaCards/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

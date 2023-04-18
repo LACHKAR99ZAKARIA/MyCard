@@ -8,13 +8,32 @@
 import SwiftUI
 
 struct InfoView: View {
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        ForEach(K.infos){ info in
+            RoundedRectangle(cornerRadius: 25)
+                .fill(Color.white)
+                .frame(height: 50)
+                .foregroundColor(.white)
+                .overlay(
+                    HStack(content: {
+                        
+                        Image(systemName: info.img)
+                            .foregroundColor(Color(red: 0.95, green: 0.77, blue: 0.06))
+                        Text(info.text)
+                    })
+                ).padding(.all)
+                .gesture(TapGesture().onEnded {
+                    guard let url = URL(string: info.lien) else { return }
+                        UIApplication.shared.open(url)
+                    })
+        }
     }
 }
 
 struct InfoView_Previews: PreviewProvider {
     static var previews: some View {
         InfoView()
+            .previewLayout(.sizeThatFits)
     }
 }
