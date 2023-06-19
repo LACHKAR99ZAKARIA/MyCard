@@ -13,7 +13,7 @@ struct K {
     
     static var infos : [info] = [
         info(text: "+212 651 696 043", img: "phone" , lien: "tel://+212651696043"),
-        info(text: "gmail : lachkar99zakaria@gmail.com", img: "mail", lien: "mailto://lachkar99zakaria@gmail.com"),
+        info(text: "gmail : lachkar99zakaria@gmail.com", img: "mail", lien: "mailto:lachkar99zakaria@gmail.com"),
         info(text: "github : /LACHKAR99ZAKARIA", img: "link", lien: "https://github.com/LACHKAR99ZAKARIA"),
         info(text: "linkedin : /zakaria-lachkar", img: "link", lien: "https://www.linkedin.com/in/zakaria-lachkar"),
     ]

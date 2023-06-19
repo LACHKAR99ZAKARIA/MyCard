@@ -17,11 +17,14 @@ struct InfoView: View {
                 .foregroundColor(.white)
                 .overlay(
                     HStack(content: {
-                        
                         Image(systemName: info.img)
                             .foregroundColor(Color(red: 0.95, green: 0.77, blue: 0.06))
+                            .padding(.leading)
                         Text(info.text)
+                            .foregroundColor(Color(red: 0.95, green: 0.77, blue: 0.06))
+                        Spacer()
                     })
+                    .font(.system(size: 15))
                 ).padding(.all)
                 .gesture(TapGesture().onEnded {
                     guard let url = URL(string: info.lien) else { return }
